@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5547451c67.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+<script src="script.js" async defer></script>
+</head>
+<body>
+    
+<div class="container">
+    <header class="encabezado">
+        <a href="index.html"><i class="fa-solid fa-heart"></i></a>       
+        <nav>
+            <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+            <ul>
+                <li> <a href="index.html">Inicio</a></li>
+                <li> <a href="#acerca">Acerca de mi</a></li>
+                <li> <a href="#trabajos">Trabajos</a></li>
+                <li> <a href="#servicios">Servicios</a></li>
+                <li> <a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="seccion-principal">
+        <section class="seccion-1">
+            <div class="acerca-de">
+                <h2>Acerca de mi</h2>
+                <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+                <p class="parrafo2">Me llamo Estefani, soy de Montevideo, Uruguay. Me gustan los perros y mi color favorito es el rosado. Me emociona aprender programación porque puedo combinar mis dos pasiones, el diseño y la tecnología.</p>
+            </div>
+            <div class="acerca-imagen">
+                <img src="img/imagen personal.jpg" alt="imagen personal" class="imagen1"> <!--Le agrego una clase a la imagen para poder llamarla en CSS y cambiarle el tamaño-->
+            </div>
+        </section>
+
+        <section class="seccion-2">
+            <img src="img/imagen de carrusel.jpg" alt="imagen de carrusel" class="imagen2">
+        </section>
+    </main>
+
+</div>
+
+<footer class="form-header">
+    <h1>Contacto</h1>
+    <p><em>¡Esperamos tu consulta!</em></p>
+
+    <form action="" method="get" class="formulario" id="form">
+      
+      <div class="form-row">
+          <label for="nombre2">Nombre</label>
+          <input id="nombre2" name="nombre" type="text" />
+      </div>
+
+      <div class="form-row">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="pepe@gmail.com"
+            required
+          />
+      </div>
+
+      <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje"></textarea>
+      </div>
+
+      <div class="form-row">
+          <button>Enviar</button>
+          <p class="alertas" id="alertas"></p>
+      </div>
+
+    </form>
+  </footer>
+  <script src="script.js"></script>
+
+  <footer>
+    <h3>Redes Sociales</h3>
+    <nav>
+        <ul>
+            <li> <a href="index.html">LinkedIn</a></li>
+            <li> <a href="#instagram">Instagram</a></li>
+            <li> <a href="#facebook">Facebook</a></li>
+            <li> <a href="#whatsapp">Whatsapp</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
+
